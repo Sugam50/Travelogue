@@ -4,6 +4,7 @@
 ## Demo
 
 Link to Project - [click here](https://traveloguediary.netlify.app/)
+<br/>
 ![Travelogue](https://cdn.discordapp.com/attachments/912379186419753012/912416958455103528/ezgif.com-gif-maker.gif)
 
 **The** amazing part is we can get information of any place around the globe in one place.
