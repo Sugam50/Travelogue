@@ -9,7 +9,7 @@ function Login() {
     onSuccess: sawoLoginCallback, //required
     identifierType: "email", //required must be one of 'email','phone number
     // identifierType: "phone_number_sms", //required must be one of 'email','phone number
-    apiKey: "a8b8715e-f1a5-40a1-8eca-662bf4474d92", //required
+    apiKey: "20512c84-b9a0-412c-bfde-66de1a7fb7aa", //required
     containerHeight: "500px", //default
   };
   return (
