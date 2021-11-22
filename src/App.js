@@ -20,9 +20,6 @@ function App() {
         <Route path='/' exact>
           <Home />
         </Route>
-        {/* <Route path='/plant' exact>
-            <Plantor />
-          </Route> */}
         <Route path='/donor' exact>
           <Donor />
         </Route>
