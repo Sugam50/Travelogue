@@ -5,7 +5,7 @@
 
 Link to Project - [click here](https://travelogue.netlify.app/)
 
-![Travelogue](https://cdn.discordapp.com/attachments/900789323908153437/901695990506065920/ezgif.com-gif-maker.gif)
+![Travelogue](https://cdn.discordapp.com/attachments/912379186419753012/912416958455103528/ezgif.com-gif-maker.gif)
 
 **The** fun part is we can save our plant and help others simultaneously.
 
