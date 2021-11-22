@@ -1,0 +1,41 @@
+.logoimage {
+        /* position:absolute; */
+        width: 3rem;
+        height: 3rem;
+        margin: 0px 20px;
+        border-radius: 50%;
+        /* left : -5px; */
+        /* top : 5px; */
+        /* z-index: 1; */
+    } 
+.navbar{
+        /* background-color:#1E5128 ; */
+        background-color:#0C2D48 ;
+}
+.home,.aboutus ,.Planttree ,.plantify, .Donate,.login {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    /* color:MediumSeaGreen; */
+    color:#2E8BC0 !important;
+    font-weight: bold;
+}
+.home:hover,.aboutus:hover ,.Planttree:hover,.plantify:hover , .Donate:hover,.login:hover{
+    color: white !important;
+}
+/* .plantify {
+    color: #B1D4E0 !important;
+   font-size: 1rem;
+   font-weight: bold;
+} */
+
+
+
+@media screen and (min-width:300px) and (max-width:1100px){
+.plantify{
+    font-size: 1rem;
+}
+.logoimage {
+   display: none;
+} 
+}
