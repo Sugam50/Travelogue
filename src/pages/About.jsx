@@ -17,7 +17,7 @@ function About() {
             <Card.Text>Frontend Developer | Ml and Al enthusiast</Card.Text>
             <ButtonGroup>
               <a href="https://www.linkedin.com/in/rajulkoshta/">
-                <Button variant="dark">
+                <Button variant="light">
                   <Linkedin />
                 </Button>
               </a>
@@ -27,7 +27,7 @@ function About() {
                 </Button>
               </a>
               <a href="https://twitter.com/RajulKoshta">
-                <Button variant="dark">
+                <Button variant="light">
                   <Twitter />
                 </Button>
               </a>
@@ -44,7 +44,7 @@ function About() {
             <Card.Text>Full Stack Developer | Android Developer</Card.Text>
             <ButtonGroup>
               <a href="https://linkedin.com/in/sugam50">
-                <Button variant="dark">
+                <Button variant="light">
                   <Linkedin />
                 </Button>
               </a>
@@ -54,7 +54,7 @@ function About() {
                 </Button>
               </a>
               <a href="https://twitter.com/sugam50">
-                <Button variant="dark">
+                <Button variant="light">
                   <Twitter />
                 </Button>
               </a>
@@ -73,7 +73,7 @@ function About() {
             <Card.Text>Frontend Developer | techie | Code lover</Card.Text>
             <ButtonGroup>
               <a href="https://linkedin.com/in/tabhay563">
-                <Button variant="dark">
+                <Button variant="light">
                   <Linkedin />
                 </Button>
               </a>
@@ -83,7 +83,7 @@ function About() {
                 </Button>
               </a>
               <a href="https://twitter.com/tabhay56">
-                <Button variant="dark">
+                <Button variant="light">
                   <Twitter />
                 </Button>
               </a>
@@ -100,7 +100,7 @@ function About() {
             <Card.Text>Frontend Developer | techie | Code lover</Card.Text>
             <ButtonGroup>
               <a href="https://linkedin.com/in/tabhay563">
-                <Button variant="dark">
+                <Button variant="light">
                   <Linkedin />
                 </Button>
               </a>
@@ -110,7 +110,7 @@ function About() {
                 </Button>
               </a>
               <a href="https://twitter.com/tabhay56">
-                <Button variant="dark">
+                <Button variant="light">
                   <Twitter />
                 </Button>
               </a>

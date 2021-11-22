@@ -26,7 +26,7 @@ function Footer() {
                 </a>
         </ButtonGroup>
         </div>
-          <small>Copyright &copy; plantify | 2021</small>
+          <small>Copyright &copy; travelogue | 2021</small>
         </div>
       </footer>
     )

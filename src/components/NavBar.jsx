@@ -7,15 +7,13 @@ function NavBar() {
 <Navbar collapseOnSelect expand="lg" className="navbar">
       <Container>
         <Image  className="logoimage"
-            src="https://cdn.discordapp.com/attachments/900789323908153437/901098486311825448/Copy_of_Plantify.png" alt="" />
-        <Navbar.Brand className="plantify" href="/">Plantify</Navbar.Brand>
+            src="https://cdn.discordapp.com/attachments/912379186419753012/912399939278098462/Lets_Get_Lost_in_travelling.png" alt="" />
+        <Navbar.Brand className="plantify" href="/">Travelogue</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
           <Link className="home"      to="/">Home</Link>
           <Link className="aboutus"   to="/About">About us</Link>
-          <Link className="Donate"    to="/donor">Donate</Link>
-          {/* <Link className="Planttree" to="/plant">Plant Tree</Link> */}
           <Link className="login"     to="/login">Login</Link>
         </Nav>
         </Navbar.Collapse>

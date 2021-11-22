@@ -14,52 +14,51 @@ function Home() {
       <div className="Intro" id="Intro">
         <h1> About Our project</h1>
         <p>
-          Plantify is a Tool to help others and Environment.This Project motivates
-          others to plant more and more trees and those who don't have time can also contribute towards green revolution
-          .Just by donationg small amount to people who are willing to plant more and more plants....<br />
-          The fun part is we can save our plant and help others simultaneously.{" "}
+          Travelogue is a website to help you get information about all places
+          to visit in your city or anywhere in the world.We are here to overcome
+          the problem of lack of knowledge of places to visit in a city.So here
+          is the solution for it the one who visits the places can upload
+          details here and others can see a list of all places together of the
+          desired city{" "}
           <ul>
             <li>
-              Example: Person A have money but dont have time to give back to
-              the nature, here comes person b who has time but want to earn
-              money. So A can donate the money through our Website and If B
-              wants money he can do this by planting a tree and recording the
-              video of that and submit to website for review phase if review got
-              pass B can got money that A has donated.
-            </li>
-            <li>
-              In this way A is helping B as well as Nature in the same time.
+              Example: Lets suppose you visit to a Delhi.So you'll search best
+              places to visit through various sites so instead that our site
+              will contain a list and pictures of all places to visit which are
+              uploaded by the local people who are familiar with the places.
             </li>
           </ul>
         </p>
       </div>
       <div className="reg_cards">
-        <Card className="card-style">
+        <Card className="card-style Card">
           <Card.Img
             className="card-img-style"
             variant="top"
-            src="https://cdn.discordapp.com/attachments/900789323908153437/901089190966591490/donate.png"
+            src="https://i.pinimg.com/originals/b4/bb/60/b4bb60012e3c239b097a1e34dc6697aa.jpg"
           />
           <Card.Body>
-            <Card.Title>Want to plant </Card.Title>
+            <Card.Title>Add Places in your city</Card.Title>
             <Card.Text>
-           Want to plant trees and also earn some money on the way but wondering how ?.Here is the good chance register now and know more. 
+              Are you a wanderer? Want to add places in you city?
+              Add here to help others to know your city well
             </Card.Text>
             <Link className="card-plant-btn" to="/login">
               <ArrowRightCircle /> know more
             </Link>
           </Card.Body>
         </Card>
-        <Card className="card-style">
+        <Card className="card-style Card">
           <Card.Img
             className="card-img-style"
             variant="top"
-            src="https://cdn.discordapp.com/attachments/900789323908153437/901090177760526387/Untitled.png"
+            src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Moraine-Lake-2560-x-1440-Wallpaper.jpg"
           />
           <Card.Body>
-            <Card.Title>Want to Donate</Card.Title>
+            <Card.Title>Search for places</Card.Title>
             <Card.Text>
-            don't have time to look after the nature mother .Contribute to the well being of our mother nature , tap the button to know more. 
+              Want information about places in you city? Here is the
+              list for must visit amazing places 
             </Card.Text>
             <Link className="card-donate-btn" to="/donor">
               <ArrowRightCircle /> know more
@@ -70,15 +69,15 @@ function Home() {
       <div className="Overlay">
         <div className="bg">
           <div className="data">
-            <h1>Trees planted</h1>
+            <h1>Visitors</h1>
             <CountUp start={0} end={150} duration={3} />
           </div>
           <div className="data">
-            <h1>Donors</h1>
+            <h1>Total places added</h1>
             <CountUp start={0} end={80} duration={7} />
           </div>
           <div className="data">
-            <h1>Planters</h1>
+            <h1>Wanderers</h1>
             <CountUp start={0} end={30} duration={7} />
           </div>
         </div>
