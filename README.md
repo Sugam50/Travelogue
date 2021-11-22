@@ -13,5 +13,5 @@ Link to Project - [click here](https://travelogue.netlify.app/)
 
 * In this way **A** is helping **B** as well as **Nature** in the same time.
 
-![]https://cdn.discordapp.com/attachments/912379186419753012/912415189087952956/Lets_Get_Lost_in_travelling.gif)
+![](https://cdn.discordapp.com/attachments/912379186419753012/912415189087952956/Lets_Get_Lost_in_travelling.gif)
 
