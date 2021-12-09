@@ -5,6 +5,7 @@ import { Redirect } from "react-router";
 // import SimpleMap from "../components/SimpleMap";
 
 function PlaceDetails() {
+  // eslint-disable-next-line
   const [Data, setData] = useState() //get session from db
   const [center, setCenter] = useState({
     lat: 33.1425314,

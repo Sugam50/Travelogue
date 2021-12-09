@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { Button, Form } from "react-bootstrap";
+import React from "react";
+// import { Button, Form } from "react-bootstrap";
 import "../Style/Dash.css";
-import SimpleMap from "../components/SimpleMap";
+// import SimpleMap from "../components/SimpleMap";
 
 function Dashboard() {
   return (
