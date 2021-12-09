@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
+import { Redirect } from "react-router-dom";
 import SawoLogin from "sawo-react";
 import "../Style/Login.css";
 function Login() {
+  const [Data, setData] = useState() 
   function sawoLoginCallback(payload) {
     console.log(payload);
+    setData(payload) //send session to db
   }
   const sawoConfig = {
     onSuccess: sawoLoginCallback, //required
@@ -15,9 +18,11 @@ function Login() {
   };
   return (
     <div className="Login">
+      {Data?<Redirect to="/placeDetails"></Redirect>:
       <div className="form">
         <SawoLogin config={sawoConfig} />
       </div>
+}
     </div>
   );
 }

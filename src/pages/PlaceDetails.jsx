@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "../Style/PlaceDetails.css";
 import { Form, Button, ButtonGroup } from "react-bootstrap";
+import { Redirect } from "react-router";
 // import SimpleMap from "../components/SimpleMap";
 
 function PlaceDetails() {
+  const [Data, setData] = useState() //get session from db
   const [center, setCenter] = useState({
     lat: 33.1425314,
     lng: 89.9304523,
@@ -26,6 +28,8 @@ function PlaceDetails() {
     }
   };
   return (
+    <>
+    {Data?
     <div className="PlaceDetails">
       <h1>Welcome! Add new place here</h1>
       <Form className="form">
@@ -72,7 +76,8 @@ function PlaceDetails() {
           </Button>
         </ButtonGroup>
       </Form>
-    </div>
+    </div>:<Redirect to='/login'></Redirect>}
+    </>
   );
 }
 
