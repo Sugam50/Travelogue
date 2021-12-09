@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import "../Style/Dash.css";
 import SimpleMap from "../components/SimpleMap";
-import { ReactMediaRecorder } from "react-media-recorder";
 
 function Dashboard() {
   const [center, setCenter] = useState({
@@ -43,41 +42,6 @@ function Dashboard() {
             <p>
               Your location is:latitutde:{center.lat} longitude:{center.lng}
             </p>
-            <div className="record">
-              <ReactMediaRecorder
-                video
-                render={({
-                  status,
-                  startRecording,
-                  stopRecording,
-                  mediaBlobUrl,
-                }) => (
-                  <div className="RecordButton">
-                    <Button
-                      className="rec"
-                      variant="light"
-                      onClick={startRecording}
-                    >
-                      Start Recording
-                    </Button>
-                    <Button
-                      className="rec"
-                      variant="light"
-                      onClick={stopRecording}
-                    >
-                      Stop Recording
-                    </Button>
-                    <video
-                      style={{ height: "300px", width: "300px" }}
-                      src={mediaBlobUrl}
-                      controls
-                      autoPlay
-                      loop
-                    />
-                  </div>
-                )}
-              />
-            </div>
           </div>
           <Button variant="dark" type="submit">Submit</Button>
         </Form>

@@ -60,7 +60,7 @@ function Home() {
               Want information about places in you city? Here is the
               list for must visit amazing places 
             </Card.Text>
-            <Link className="card-donate-btn" to="/donor">
+            <Link className="card-donate-btn" to="/places">
               <ArrowRightCircle /> know more
             </Link>
           </Card.Body>

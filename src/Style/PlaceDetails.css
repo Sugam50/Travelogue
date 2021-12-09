@@ -1,0 +1,37 @@
+.PlaceDetails {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  background-image: url("./illustra.svg");
+  background-repeat: no-repeat;
+  /* background-size: 33rem;
+    background-position-x: 20px;
+    background-position-y: 10rem; */
+  background-size: 38rem;
+  background-position-x: 25px;
+  background-position-y: 18rem;
+}
+
+.PlaceDetails h1 {
+  padding: 10px;
+  margin-top: 10px !important;
+}
+
+/* .PlaceDetails .form { */
+/* margin-top: 20px !important; */
+/* margin: 115px 0px 115px 500px; */
+/* width: 50%; */
+/* padding: 20px; */
+/* border: 5px dotted green; */
+/* } */
+
+.PlaceDetails .form .ButtonGroup {
+  width: 100%;
+}
+
+.PlaceDetails .form .ButtonGroup button {
+  margin: 10px;
+  border-radius: 10px !important;
+}

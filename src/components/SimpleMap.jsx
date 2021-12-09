@@ -16,7 +16,7 @@ function SimpleMap({center}) {
             <AnyReactComponent
               lat={center.lat}
               lng={center.lng}
-            //   text="My Marker"
+              text="My Marker"
             />
           </GoogleMapReact>
         </div>

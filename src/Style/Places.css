@@ -1,0 +1,64 @@
+.Places {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b1d4e0;
+}
+
+.Places .Options{
+  margin: 10px 0px;
+  font-size: larger;
+  padding: 20px;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Places h1 {
+  margin-top: 20px;
+}
+.Places .Places_list_alter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+.Places .Places_list {
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  margin: 10px 0px;
+  overflow-x: auto;
+  border-radius: 33px;
+  margin-bottom: 50px !important;
+}
+.Places .Places_list .placeDet{
+  text-decoration: none !important;
+  color: black !important;
+}
+
+/* Track */
+.Places_list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.Places_list::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.Places_list::-webkit-scrollbar-thumb {
+  background: rgb(128, 128, 128);
+}
+
+/* Handle on hover */
+.Places_list::-webkit-scrollbar-thumb:hover {
+  background: rgb(59, 59, 59);
+}
+@media screen and (max-width: 1200px) {
+  .Places .Places_list {
+    width: 100%;
+  }
+}

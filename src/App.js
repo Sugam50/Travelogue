@@ -5,8 +5,8 @@ import { useEffect } from 'react';
 import NavBar from './components/NavBar';
 import React from 'react';
 import Footer from './components/Footer';
-// import Plantor from './pages/Plantor';
-import Donor from './pages/Donor';
+import PlaceDetails from './pages/PlaceDetails';
+import Places from './pages/Places';
 import About from './pages/About';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
@@ -20,8 +20,8 @@ function App() {
         <Route path='/' exact>
           <Home />
         </Route>
-        <Route path='/donor' exact>
-          <Donor />
+        <Route path='/places' exact>
+          <Places />
         </Route>
         <Route path='/About' exact>
           <About />
@@ -31,6 +31,9 @@ function App() {
         </Route>
         <Route path='/dash' exact>
           <Dashboard />
+        </Route>
+        <Route path='/placeDetails' exact>
+          <PlaceDetails/>
         </Route>
         <Route path='*'>
           <Redirect to="/"></Redirect>
