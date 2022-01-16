@@ -10,31 +10,21 @@ import Places from './pages/Places';
 import About from './pages/About';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import { getAuth } from 'firebase/auth';
 
 function App() {
-  useEffect(() => { window.scrollTo(0, 0) }, [])
+  // eslint-disable-next-line
+  useEffect(() => { window.scrollTo(0, 0); const auth = getAuth() }, [])
   return (
     <div className="App">
       <NavBar />
       <Switch>
-        <Route path='/' exact>
-          <Home />
-        </Route>
-        <Route path='/places' exact>
-          <Places />
-        </Route>
-        <Route path='/About' exact>
-          <About />
-        </Route>
-        <Route path='/login' exact>
-          <Login />
-        </Route>
-        <Route path='/dash' exact>
-          <Dashboard />
-        </Route>
-        <Route path='/placeDetails' exact>
-          <PlaceDetails/>
-        </Route>
+        <Route path='/' render={(props) => <Home {...props} />} exact />
+        <Route path='/places' render={(props) => <Places {...props} />} exact />
+        <Route path='/About' render={(props) => <About {...props} />} exact />
+        <Route path='/login' render={(props) => <Login {...props} />} exact />
+        <Route path='/dash' render={(props) => <Dashboard {...props} />} exact />
+        <Route path='/placeDetails' render={(props) => <PlaceDetails {...props} />} exact />
         <Route path='*'>
           <Redirect to="/"></Redirect>
         </Route>

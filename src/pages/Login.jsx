@@ -1,28 +1,103 @@
-import React,{useState} from "react";
-import { Redirect } from "react-router-dom";
-import SawoLogin from "sawo-react";
+import React, { useState, useEffect } from "react";
+import { Button, FormLabel, InputGroup } from "react-bootstrap";
+// import { Redirect } from "react-router-dom";
 import "../Style/Login.css";
+import { getAuth } from "firebase/auth";
+import { UserLogin, UserSignup } from "../Redux/action";
+import { useDispatch, useSelector } from "react-redux";
+
 function Login() {
-  const [Data, setData] = useState() 
-  function sawoLoginCallback(payload) {
-    console.log(payload);
-    setData(payload) //send session to db
-  }
-  const sawoConfig = {
-    onSuccess: sawoLoginCallback, //required
-    identifierType: "email", //required must be one of 'email','phone number
-    // identifierType: "phone_number_sms", //required must be one of 'email','phone number
-    apiKey: "0f067071-2de9-4edc-946a-1b1fc7eade3a", //required
-    // apiKey: "20512c84-b9a0-412c-bfde-66de1a7fb7aa", //required
-    containerHeight: "500px", //default
+  const [User, setUser] = useState();
+  const [HavingAccount, setHavingAccount] = useState(true);
+  const [Email, setEmail] = useState("");
+  const [Password, setPassword] = useState("");
+  const UserData = useSelector((state) => state.UserData);
+  const auth = getAuth();
+  const dispatch = useDispatch();
+
+  const _Submit = () => {
+    HavingAccount
+      ? dispatch(UserLogin(auth, Email, Password))
+      : dispatch(UserSignup(auth, Email, Password));
+    setEmail("");
+    setPassword("");
   };
+
+  useEffect(() => {
+    // console.log(UserData)
+    setUser(UserData);
+  }, [UserData]);
+
   return (
     <div className="Login">
-      {Data?<Redirect to="/placeDetails"></Redirect>:
-      <div className="form">
-        <SawoLogin config={sawoConfig} />
-      </div>
-}
+      {User?.length>0 ? (
+        // <Redirect to={{pathname:"/placeDetails" , user:User}}></Redirect>
+        <>
+          sdhsdvhsdhov
+          {/* <Button onClick={_Logout}>Logout</Button> */}
+        </>
+      ) : (
+        <div className="form">
+          {HavingAccount ? (
+            <>
+              <InputGroup>
+                <label typeof="Email">Enter Email</label>
+                <input
+                  placeholder="Enter your email"
+                  defaultValue={Email}
+                  onChange={(e) => setEmail(e.target.value)}
+                ></input>
+              </InputGroup>
+              <InputGroup>
+                <FormLabel typeof="Password">Enter Password</FormLabel>
+                <input
+                  placeholder="Enter your Password"
+                  defaultValue={Password}
+                  onChange={(e) => setPassword(e.target.value)}
+                ></input>
+              </InputGroup>
+              <div className="AccountLabel">
+                Don't Have an account??{" "}
+                <span onClick={() => setHavingAccount(!HavingAccount)}>
+                  {" "}
+                  Sign Up
+                </span>
+              </div>
+              <Button type="submit" onClick={_Submit}>
+                Login
+              </Button>
+            </>
+          ) : (
+            <>
+              <InputGroup>
+                <label typeof="Email">Enter Email</label>
+                <input
+                  placeholder="Enter your email"
+                  defaultValue={Email}
+                  onChange={(e) => setEmail(e.target.value)}
+                ></input>
+              </InputGroup>
+              <InputGroup>
+                <FormLabel typeof="Password">Enter Password</FormLabel>
+                <input
+                  placeholder="Enter your Password"
+                  defaultValue={Password}
+                  onChange={(e) => setPassword(e.target.value)}
+                ></input>
+              </InputGroup>
+              <div className="AccountLabel">
+                Already having an account??{" "}
+                <span onClick={() => setHavingAccount(!HavingAccount)}>
+                  Login
+                </span>
+              </div>
+              <Button type="submit" onClick={_Submit}>
+                Signup
+              </Button>
+            </>
+          )}
+        </div>
+      )}
     </div>
   );
 }

@@ -9,17 +9,17 @@ function Footer() {
         <div className="container text-center">
          <div>
          <ButtonGroup>
-              <a href="/">
+              <a href="/" style={{'margin':'10px'}}>
                  <Button variant="light">
                   <Linkedin />
                  </Button>
                 </a>
-                <a href="https://github.com/Sugam50/Travelogue">
+                <a style={{'margin':'10px'}} href="https://github.com/Sugam50/Travelogue">
                 <Button variant="light">
                   <GitHub />
                 </Button>
                 </a>
-                <a href="/">
+                <a style={{'margin':'10px'}} href="/">
                 <Button variant="light">
                   <Twitter />
                 </Button>
